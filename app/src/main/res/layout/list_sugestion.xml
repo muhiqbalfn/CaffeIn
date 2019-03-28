@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvDessert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardElevation="3dp"
+        card_view:cardUseCompatPadding="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/male"/>
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_toRightOf="@+id/iv"
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:text="Muhammad Iqbal"/>
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_toRightOf="@+id/iv"
+                android:layout_below="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="fnfirdaus45@gmail.com"/>
+            <TextView
+                android:id="@+id/tvNote"
+                android:layout_toRightOf="@+id/iv"
+                android:textColor="@color/colorBlack"
+                android:layout_below="@+id/tvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note : "/>
+            <TextView
+                android:id="@+id/tvSaran"
+                android:layout_toRightOf="@+id/tvNote"
+                android:layout_below="@+id/tvEmail"
+                android:layout_width="255dp"
+                android:layout_height="wrap_content"
+                android:text="Pelayananya kurang bagus nih !"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6498d4</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorSemuPutih">#f1eded</color>
+    <color name="colorSemuWhite">#c1bbbb</color>
+    <color name="colorSemuBlack">#8b8787</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorBiruTua">#5364c2</color>
+    <color name="Hijau">#4fc971</color>
+    <color name="BlueLangit">#91b9d7</color>
+    <color name="BlueSemu">#a2bbce</color>
+    <color name="coklat">#e7dbc1</color>
+</resources>

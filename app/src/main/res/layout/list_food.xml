@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_margin="5dp"
+    android:background="@color/colorSemuWhite"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvFood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardElevation="3dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="3dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/rlImgFood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/ivFood"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:src="@drawable/list_food"/>
+                </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tvNameFood"
+                android:layout_toRightOf="@+id/rlImgFood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorBlack"
+                android:text="Mie Setan level 1"/>
+            <TextView
+                android:id="@+id/tvPriceFood"
+                android:layout_below="@+id/tvNameFood"
+                android:layout_toRightOf="@+id/rlImgFood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/Hijau"
+                android:text="Rp 11.000"/>
+            <LinearLayout
+                android:id="@+id/llAdd"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/tvPriceFood"
+                android:layout_toRightOf="@+id/rlImgFood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/ivMin"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:src="@drawable/min"/>
+                <TextView
+                    android:id="@+id/tvQty"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/Hijau"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"/>
+                <ImageView
+                    android:id="@+id/ivPlus"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:src="@drawable/plus"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btnPesanfood"
+                android:layout_width="55dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentRight="true"
+                android:background="@color/Hijau"
+                android:textColor="@android:color/white"
+                android:textSize="10dp"
+                android:text="pesan"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
